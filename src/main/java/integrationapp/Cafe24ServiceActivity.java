@@ -1,4 +1,4 @@
-package moneytransferapp;
+package integrationapp;
 
 // @@@SNIPSTART money-transfer-project-template-java-activity-interface
 
@@ -6,12 +6,12 @@ import io.temporal.activity.ActivityInterface;
 import io.temporal.activity.ActivityMethod;
 
 @ActivityInterface
-public interface AccountActivity {
+public interface Cafe24ServiceActivity {
 
     @ActivityMethod
-    void deposit(String accountId, String referenceId, double amount);
+    void registerPlugin(String appCafe24Id);
 
     @ActivityMethod
-    void withdraw(String accountId, String referenceId, double amount);
+    void deregisterPlugin(String appCafe24Id);
 }
 // @@@SNIPEND
